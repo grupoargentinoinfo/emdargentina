@@ -80,6 +80,22 @@ assetic:
     filters:
         cssrewrite: ~
     assets:
+        font-awesome-otf:
+            inputs: '%kernel.root_dir%/../vendor/components/font-awesome/fonts/FontAwesome.otf'
+            output: 'fonts/FontAwesome.otf'
+        font-awesome-eot:
+            inputs: '%kernel.root_dir%/../vendor/components/font-awesome/fonts/fontawesome-webfont.eot'
+            output: 'fonts/fontawesome-webfont.eot'
+        font-awesome-svg:
+            inputs: '%kernel.root_dir%/../vendor/components/font-awesome/fonts/fontawesome-webfont.svg'
+            output: 'fonts/fontawesome-webfont.svg'
+        font-awesome-ttf:
+            inputs: '%kernel.root_dir%/../vendor/components/font-awesome/fonts/fontawesome-webfont.ttf'
+            output: 'fonts/fontawesome-webfont.ttf'
+        font-awesome-woff:
+            inputs: '%kernel.root_dir%/../vendor/components/font-awesome/fonts/fontawesome-webfont.woff'
+            output: 'fonts/fontawesome-webfont.woff'
+
         bootstrap_js:
             inputs:
                 - %kernel.root_dir%/../vendor/twitter/bootstrap/dist/js/bootstrap.js
@@ -109,3 +125,7 @@ assetic:
         jquery:
             inputs:
                 - %kernel.root_dir%/../vendor/components/jquery/jquery.js
+
+        fonts:
+            inputs:
+                - %kernel.root_dir%/../vendor/components/font-awesome/css/font-awesome.min.css

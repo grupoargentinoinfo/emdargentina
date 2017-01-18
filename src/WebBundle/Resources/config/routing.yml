@@ -1,3 +1,7 @@
 web_homepage:
     path:     /
     defaults: { _controller: WebBundle:Default:index }
+
+prestadores_medicos:
+    path:     /prestadores-medicos
+    defaults: { _controller: WebBundle:Default:prestadores_medicos }
